@@ -5,7 +5,11 @@ class Personaje {
   vivo = true;
   serie = "Juego de Tronos";
 
-  constructor(nombrePersonaje, familiaPersonaje, edadPersonaje) {
+  constructor(
+    nombrePersonaje: string,
+    familiaPersonaje: string,
+    edadPersonaje: number
+  ) {
     this.nombre = nombrePersonaje;
     this.familia = familiaPersonaje;
     this.edad = edadPersonaje;
