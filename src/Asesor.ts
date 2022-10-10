@@ -2,11 +2,14 @@ import Personaje from "./Personaje.js";
 
 class Asesor extends Personaje {
   asesorado;
-  constructor(nombreAsesor, familiaAsesor, edadAsesor, personajeAsesorado) {
+  constructor(
+    nombreAsesor: string,
+    familiaAsesor: string,
+    edadAsesor: number,
+    personajeAsesorado: string
+  ) {
     super(nombreAsesor, familiaAsesor, edadAsesor);
-    if (personajeAsesorado instanceof Personaje) {
-      this.asesorado = personajeAsesorado;
-    }
+    this.asesorado = personajeAsesorado;
   }
 
   comunicar() {
