@@ -3,22 +3,19 @@ import Personaje from "./Personaje.js";
 class Escudero extends Personaje {
   sirveA;
   pelotismo;
-
   constructor(
-    nombreEscudero,
-    familiaEscudero,
-    edadEscudero,
-    valorPelotismo,
-    personajeSirve
+    nombreEscudero: string,
+    familiaEscudero: string,
+    edadEscudero: number,
+    valorPelotismo: number,
+    personajeSirve: string
   ) {
     super(nombreEscudero, familiaEscudero, edadEscudero);
     this.pelotismo = this.filtrarPelotismo(valorPelotismo);
-    if (personajeSirve instanceof Luchador) {
-      this.sirveA = personajeSirve;
-    }
+    this.sirveA = personajeSirve;
   }
 
-  filtrarPelotismo(gradoPelotismo) {
+  filtrarPelotismo(gradoPelotismo: number) {
     if (gradoPelotismo < 0) {
       return 0;
     } else if (gradoPelotismo > 10) {
