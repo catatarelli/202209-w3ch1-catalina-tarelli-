@@ -5,18 +5,18 @@ class Luchador extends Personaje {
   destreza;
 
   constructor(
-    nombreLuchador;
-    familiaLuchador;
-    edadLuchador;
-    armaLuchador;
-    valorDestreza;
+    nombreLuchador: string,
+    familiaLuchador: string,
+    edadLuchador: number,
+    armaLuchador: string,
+    valorDestreza: number
   ) {
     super(nombreLuchador, familiaLuchador, edadLuchador);
     this.arma = armaLuchador;
     this.destreza = this.filtraDestreza(valorDestreza);
   }
 
-  filtraDestreza(valorDestreza) {
+  filtraDestreza(valorDestreza: number) {
     if (valorDestreza < 0) {
       return 0;
     } else if (valorDestreza > 10) {
