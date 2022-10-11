@@ -1,6 +1,7 @@
 import Character from "../Character/Character.js";
+import FighterStructure from "./types.js";
 
-class Fighter extends Character {
+class Fighter extends Character implements FighterStructure {
   weapon;
   dexterity;
 

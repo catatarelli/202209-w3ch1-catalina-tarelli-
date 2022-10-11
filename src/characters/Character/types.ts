@@ -2,7 +2,7 @@ interface CharacterStructure {
   name: string;
   family: string;
   age: number;
-  isAlive: true;
+  isAlive: boolean;
   series: string;
   communicate: () => string;
   die: () => void;

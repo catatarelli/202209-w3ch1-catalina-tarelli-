@@ -1,15 +1,16 @@
 import Character from "../Character/Character.js";
+import AdvisorStructure from "./types.js";
 
-class Advisor extends Character {
+class Advisor extends Character implements AdvisorStructure {
   advises;
   constructor(
     name: string,
     family: string,
     age: number,
-    assessedCharacter: string
+    advisedCharacter: string
   ) {
     super(name, family, age);
-    this.advises = assessedCharacter;
+    this.advises = advisedCharacter;
   }
 
   communicate() {
