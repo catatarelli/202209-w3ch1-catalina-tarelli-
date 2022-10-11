@@ -9,7 +9,7 @@ class Communications extends Component {
   render() {
     super.render();
     this.domElement.innerHTML = `
-     <p class="comunications__text display-1">${this.character.communicate}</p>
+      <p class="comunications__text display-1">${this.character.communicate}</p>
       <img
         class="comunications__picture"
         src="${this.character.imagePath}"

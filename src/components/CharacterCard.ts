@@ -21,12 +21,12 @@ class CharacterCard extends Component {
     super.render();
     this.domElement.innerHTML = `
     <div class="card character__card">
-       <img src="${this.character.imagePath}" alt="${this.character.name} ${
+        <img src="${this.character.imagePath}" alt="${this.character.name} ${
       this.character.family
     }" 
-       class="character__picture card-img-top" height=100 width=100/>
-         <div class="card-body">
-           <h2 class="character__name card-title h4">${this.character.name} ${
+        class="character__picture card-img-top" height=100 width=100/>
+          <div class="card-body">
+            <h2 class="character__name card-title h4">${this.character.name} ${
       this.character.family
     }</h2>
               <div class="character__info">
