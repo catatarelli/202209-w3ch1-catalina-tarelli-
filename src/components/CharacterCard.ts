@@ -3,9 +3,7 @@ import Character from "../characters/Character/Character.js";
 import Fighter from "../characters/Fighter/Fighter.js";
 import King from "../characters/King/King.js";
 import Squire from "../characters/Squire/Squire.js";
-import Button from "./Button.js";
 import Component from "./Component.js";
-import Communications from "./Communications.js";
 
 class CharacterCard extends Component {
   constructor(parentElement: HTMLElement, private character: Character) {
