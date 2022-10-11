@@ -1,13 +1,11 @@
 import CharacterStructure from "./types.js";
 
 class Character implements CharacterStructure {
-  name;
-  family;
-  age;
   isAlive = true;
   series = "Juego de Tronos";
+  imagePath: string;
 
-  constructor(name: string, family: string, age: number) {
+  constructor(public name: string, public family: string, public age: number) {
     this.name = name;
     this.family = family;
     this.age = age;
