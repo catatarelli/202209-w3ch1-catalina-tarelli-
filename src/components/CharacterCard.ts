@@ -8,11 +8,6 @@ import Component from "./Component.js";
 import Communications from "./Communications.js";
 
 class CharacterCard extends Component {
-  private dieButton: Button;
-  private speakButton: Button;
-  private thumbsDownClasses = "fas fa-thumbs-down";
-  private iconElement: HTMLElement;
-
   constructor(parentElement: HTMLElement, private character: Character) {
     super(parentElement, "li", "character col");
   }
