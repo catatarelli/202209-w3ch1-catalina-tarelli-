@@ -1,4 +1,6 @@
-class Character {
+import CharacterStructure from "./types.js";
+
+class Character implements CharacterStructure {
   name;
   family;
   age;

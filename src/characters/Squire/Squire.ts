@@ -1,6 +1,7 @@
 import Character from "../Character/Character.js";
+import SquireStructure from "./types.js";
 
-class Squire extends Character {
+class Squire extends Character implements SquireStructure {
   serves;
   kissAssLevel;
   constructor(
