@@ -12,7 +12,7 @@ const bronn = new Squire("Bronn", "AguasNegras", 54, 0, "Jaime");
 joffrey.imagePath = "../../images/joffrey.jpg";
 jaime.imagePath = "../../images/jaime.jpg";
 daenerys.imagePath = "../../images/daenerys.jpg";
-tyrion.imagePath = "../../images.tyrion.jpg";
+tyrion.imagePath = "../../images/tyrion.jpg";
 bronn.imagePath = "../../images.bronn.jpg";
 
 const characters = [joffrey, jaime, daenerys, tyrion, bronn];
